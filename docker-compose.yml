@@ -1,0 +1,11 @@
+version: '3'
+services:
+  utc-service:
+    container_name: tuten-utc
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: utc-service
+    restart: always
+    ports:
+      - 8085:8085
